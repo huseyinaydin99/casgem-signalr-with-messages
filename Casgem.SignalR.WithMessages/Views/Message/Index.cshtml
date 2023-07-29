@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <table class="table-borderless">
+        <tr>
+            <td>
+                <span>Kişi: </span>
+                <input class="form-control fw-bold" type="text" id="person" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>
+                    Mesaj:
+                </span>
+                <input class="form-control" type="text" class="w-100" id="message" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="btn btn-primary" id="sendMessage" value="Mesajı Gönder" />
+            </td>
+        </tr>
+    </table>
+    <div id="messagesList">
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
